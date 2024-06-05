@@ -1,0 +1,18 @@
+<table>
+  <thead>
+  <tr>
+  <th>Região</th>
+  <th>Temperatura da Água</th>
+  <th>pH</th>
+  <th>Nível de Poluição</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of oceanData">
+  <td>{{ data.regiao }}</td>
+  <td>{{ data.temperaturaAgua }}</td>
+  <td>{{ data.pH }}</td>
+  <td>{{ data.nivelPoluicao }}</td>
+  </tr>
+  </tbody>
+  </table>
