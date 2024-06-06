@@ -1,5 +1,11 @@
 # GsOceano2024
 
+# Marianne Nocce Pinheiro RM93255
+
+# Luana Ramos dos Santos RM94670
+
+# As instruções estão na branch - MAIN -
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
 ## Development server
@@ -25,3 +31,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+![image](https://github.com/manocce/gs_oceano/assets/73118585/04de9533-12c3-4966-800a-82d1f850bbb4)
+
