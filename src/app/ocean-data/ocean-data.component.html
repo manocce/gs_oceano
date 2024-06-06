@@ -1,78 +1,78 @@
 <div class="container">
   <div class="filters">
-  <label for="regiao">Região</label>
-  <select id="regiao" [(ngModel)]="filters.regiao" (change)="onFilterChange()">
-  <option value="">Todas</option>
-  <option value="Atlântico Norte">Atlântico Norte</option>
-  <option value="Atlântico Sul">Atlântico Sul</option>
-  <option value="Pacífico Norte">Pacífico Norte</option>
-  <option value="Pacífico Sul">Pacífico Sul</option>
-  <option value="Índico">Índico</option>
-  <option value="Ártico">Ártico</option>
-  <option value="Antártico">Antártico</option>
-  </select>
+    <label for="regiao">Região</label>
+    <select id="regiao" [(ngModel)]="filters.regiao" (change)="onFilterChange()">
+      <option value="">Todas</option>
+      <option value="Atlântico Norte">Atlântico Norte</option>
+      <option value="Atlântico Sul">Atlântico Sul</option>
+      <option value="Pacífico Norte">Pacífico Norte</option>
+      <option value="Pacífico Sul">Pacífico Sul</option>
+      <option value="Índico">Índico</option>
+      <option value="Ártico">Ártico</option>
+      <option value="Antártico">Antártico</option>
+    </select>
 
-      <label for="especie">Espécie</label>
-  <input id="especie" type="text" [(ngModel)]="filters.especie" (input)="onFilterChange()">
+    <label for="especie">Espécie</label>
+    <input id="especie" type="text" [(ngModel)]="filters.especie" (input)="onFilterChange()">
 
-      <label for="statusConservacao">Status de Conservação</label>
-  <select id="statusConservacao" [(ngModel)]="filters.statusConservacao" (change)="onFilterChange()">
-  <option value="">Todos</option>
-  <option value="Ameaçada">Ameaçada</option>
-  <option value="Vulnerável">Vulnerável</option>
-  <option value="Menos preocupante">Menos preocupante</option>
-  <option value="Criticamente ameaçado">Criticamente ameaçado</option>
-  </select>
+    <label for="statusConservacao">Status de Conservação</label>
+    <select id="statusConservacao" [(ngModel)]="filters.statusConservacao" (change)="onFilterChange()">
+      <option value="">Todos</option>
+      <option value="Ameaçada">Ameaçada</option>
+      <option value="Vulnerável">Vulnerável</option>
+      <option value="Menos preocupante">Menos preocupante</option>
+      <option value="Criticamente ameaçado">Criticamente ameaçado</option>
+    </select>
 
-      <label for="temperaturaMin">Temperatura Mínima</label>
-  <input id="temperaturaMin" type="number" [(ngModel)]="filters.temperaturaMin" (input)="onFilterChange()">
+    <label for="temperaturaMin">Temperatura Mínima</label>
+    <input id="temperaturaMin" type="number" [(ngModel)]="filters.temperaturaMin" (input)="onFilterChange()">
 
-      <label for="temperaturaMax">Temperatura Máxima</label>
-  <input id="temperaturaMax" type="number" [(ngModel)]="filters.temperaturaMax" (input)="onFilterChange()">
+    <label for="temperaturaMax">Temperatura Máxima</label>
+    <input id="temperaturaMax" type="number" [(ngModel)]="filters.temperaturaMax" (input)="onFilterChange()">
 
-      <label for="phMin">pH Mínimo</label>
-  <input id="phMin" type="number" step="0.1" [(ngModel)]="filters.phMin" (input)="onFilterChange()">
+    <label for="phMin">pH Mínimo</label>
+    <input id="phMin" type="number" step="0.1" [(ngModel)]="filters.phMin" (input)="onFilterChange()">
 
-      <label for="phMax">pH Máximo</label>
-  <input id="phMax" type="number" step="0.1" [(ngModel)]="filters.phMax" (input)="onFilterChange()">
+    <label for="phMax">pH Máximo</label>
+    <input id="phMax" type="number" step="0.1" [(ngModel)]="filters.phMax" (input)="onFilterChange()">
 
-      <label for="nivelPoluicao">Nível de Poluição</label>
-  <select id="nivelPoluicao" [(ngModel)]="filters.nivelPoluicao" (change)="onFilterChange()">
-  <option value="">Todos</option>
-  <option value="Baixo">Baixo</option>
-  <option value="Moderado">Moderado</option>
-  <option value="Alto">Alto</option>
-  </select>
+    <label for="nivelPoluicao">Nível de Poluição</label>
+    <select id="nivelPoluicao" [(ngModel)]="filters.nivelPoluicao" (change)="onFilterChange()">
+      <option value="">Todos</option>
+      <option value="Baixo">Baixo</option>
+      <option value="Moderado">Moderado</option>
+      <option value="Alto">Alto</option>
+    </select>
   </div>
 
-    <table>
-  <thead>
-  <tr>
-  <th>Região</th>
-  <th>Temperatura da Água</th>
-  <th>pH</th>
-  <th>Nível de Poluição</th>
-  <th>Espécies</th>
-  <th>Projetos de Conservação</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let data of oceanData">
-  <td>{{ data.regiao }}</td>
-  <td>{{ data.temperaturaAgua }}</td>
-  <td>{{ data.pH }}</td>
-  <td>{{ data.nivelPoluicao }}</td>
-  <td>
-  <ul>
-  <li *ngFor="let especie of data.especies">{{ especie.nome }} ({{ especie.status }})</li>
-  </ul>
-  </td>
-  <td>
-  <ul>
-  <li *ngFor="let projeto of data.projetosConservacao">{{ projeto.nomeProjeto }} - {{ projeto.tipoProjeto }} ({{ projeto.tipoParticipacao }})</li>
-  </ul>
-  </td>
-  </tr>
-  </tbody>
+  <table>
+    <thead>
+      <tr>
+        <th>Região</th>
+        <th>Temperatura da Água</th>
+        <th>pH</th>
+        <th>Nível de Poluição</th>
+        <th>Espécies</th>
+        <th>Projetos de Conservação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of oceanData">
+        <td>{{ data.regiao }}</td>
+        <td>{{ data.temperaturaAgua }}</td>
+        <td>{{ data.pH }}</td>
+        <td>{{ data.nivelPoluicao }}</td>
+        <td>
+          <ul>
+            <li *ngFor="let especie of data.especies">{{ especie.nome }} ({{ especie.status }})</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li *ngFor="let projeto of data.projetosConservacao">{{ projeto.nomeProjeto }} - {{ projeto.tipoProjeto }} ({{ projeto.tipoParticipacao }})</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
   </table>
-  </div>
+</div>

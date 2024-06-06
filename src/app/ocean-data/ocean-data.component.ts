@@ -1,11 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { OceanDataService } from '../ocean-data.service';
-
+import { OceanData } from '../interfaces/interfaces'; // Importar a interface OceanData
 
 @Component({
   selector: 'app-ocean-data',
   templateUrl: './ocean-data.component.html',
-  styleUrls: ['./ocean-data.component.css']
+  styleUrls: ['./ocean-data.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    FormsModule,
+    HttpClientModule
+  ]
 })
 export class OceanDataComponent implements OnInit {
   filters = {
@@ -19,7 +28,7 @@ export class OceanDataComponent implements OnInit {
     nivelPoluicao: ''
   };
 
-  oceanData: OceanData[] = [];
+  oceanData: OceanData[] = []; // Usar a interface OceanData
   displayedColumns: string[] = ['regiao', 'temperaturaAgua', 'pH', 'nivelPoluicao', 'especies', 'projetosConservacao'];
 
   constructor(private oceanDataService: OceanDataService) {}

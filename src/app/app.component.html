@@ -1,6 +1,111 @@
-<div>
+<div class="container">
+  <header>
+    <h1>Oceanic Data Explorer</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Ocean Conditions</a>
+      <a href="#">Endangered Species</a>
+      <a href="#">Conservation Projects</a>
+    </nav>
+  </header>
 
-  <p>Marianne Nocce Pinheiro - RM93255</p>
-  <p>Luana Ramos dos Santos - RM94670</p>
+  <section class="filters-section">
+    <h2>Filters</h2>
+    <div class="filters">
+      <div class="filter-group">
+        <label for="region">Region</label>
+        <select id="region">
+          <option value="">All</option>
+          <option value="atlantic-north">Atlantic North</option>
+          <option value="atlantic-south">Atlantic South</option>
+          <option value="pacific-north">Pacific North</option>
+          <option value="pacific-south">Pacific South</option>
+          <option value="indian">Indian</option>
+          <option value="arctic">Arctic</option>
+          <option value="antarctic">Antarctic</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="species">Species</label>
+        <input id="species" type="text">
+      </div>
+
+      <div class="filter-group">
+        <label for="conservation-status">Conservation Status</label>
+        <input id="conservation-status" type="text">
+      </div>
+
+      <div class="filter-group">
+        <label for="temperature">Water Temperature</label>
+        <input id="temperature" type="number">
+      </div>
+
+      <div class="filter-group">
+        <label for="ph">pH</label>
+        <input id="ph" type="number">
+      </div>
+
+      <div class="filter-group">
+        <label for="pollution-level">Pollution Levels</label>
+        <input id="pollution-level" type="text">
+      </div>
+
+      <div class="filter-group">
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="data-table-section">
+    <h2>Data Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Region</th>
+          <th>Water Temperature</th>
+          <th>pH</th>
+          <th>Pollution Levels</th>
+          <th>Species</th>
+          <th>Conservation Projects</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example data row -->
+        <tr>
+          <td>Atlantic North</td>
+          <td>20</td>
+          <td>8.1</td>
+          <td>Low</td>
+          <td>
+            <ul>
+              <li>Species 1 (Endangered)</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Project 1 - Type A (Participation)</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pagination">
+      <a href="#">Previous</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">Next</a>
+    </div>
+  </section>
+
+  <div>
+
+    <p>Marianne Nocce Pinheiro - RM93255</p>
+    <p>Luana Ramos dos Santos - RM94670</p>
+  </div>
+  
 </div>
+
 
