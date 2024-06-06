@@ -6,16 +6,18 @@
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: #0b486b; /* Azul marinho para o fundo do corpo */
   padding: 20px;
 }
 
 .container {
   width: 90%;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #ffffff; /* Branco para a superfície do oceano */
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #aed9e0; /* Azul claro para o contorno do oceano */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -27,12 +29,18 @@ header {
 
 header h1 {
   font-size: 24px;
+  color: #176d81; /* Azul mais escuro para o título */
 }
 
 nav a {
   margin-left: 15px;
   text-decoration: none;
-  color: #000;
+  color: #176d81; /* Azul mais escuro para os links */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2b9db9; /* Azul claro para os links ao passar o mouse */
 }
 
 .filters-section,
@@ -44,16 +52,17 @@ nav a {
 .data-table-section h2 {
   margin-bottom: 10px;
   font-size: 20px;
+  color: #176d81; /* Azul mais escuro para os títulos das seções */
 }
 
 .filters {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #aed9e0; /* Azul claro para as bordas dos filtros */
   padding: 15px;
   border-radius: 5px;
-  background-color: #f1f1f1;
+  background-color: #d9edf2; /* Azul claro para o fundo dos filtros */
 }
 
 .filters .filter-group {
@@ -63,27 +72,31 @@ nav a {
 
 .filters label {
   margin-bottom: 5px;
+  color: #176d81; /* Azul mais escuro para os rótulos dos filtros */
 }
 
 .filters select,
 .filters input {
   padding: 8px;
   margin-bottom: 10px;
+  border: 1px solid #aed9e0; /* Azul claro para as bordas dos campos de entrada */
+  border-radius: 5px;
 }
 
 .search-button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: #176d81; /* Azul mais escuro para o botão de pesquisa */
+  color: #ffffff; /* Branco para o texto do botão de pesquisa */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
   align-self: flex-end;
+  transition: background-color 0.3s ease;
 }
 
 .search-button:hover {
-  background-color: #0056b3;
+  background-color: #2b9db9; /* Azul claro para o botão de pesquisa ao passar o mouse */
 }
 
 table {
@@ -93,13 +106,13 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid #aed9e0; /* Azul claro para as bordas da tabela */
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #d9edf2; /* Azul claro para o fundo do cabeçalho da tabela */
 }
 
 .pagination {
@@ -111,9 +124,10 @@ th {
 .pagination a {
   margin: 0 5px;
   text-decoration: none;
-  color: #007bff;
+  color: #176d81; /* Azul mais escuro para os links da paginação */
 }
 
 .pagination a:hover {
   text-decoration: underline;
+  color: #2b9db9; /* Azul claro para os links da paginação ao passar o mouse */
 }
