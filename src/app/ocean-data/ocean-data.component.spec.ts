@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OceanDataTableComponent } from './ocean-data-table.component';
+import { OceanDataComponent } from './ocean-data.component';
 
-describe('OceanDataTableComponent', () => {
-  let component: OceanDataTableComponent;
-  let fixture: ComponentFixture<OceanDataTableComponent>;
+describe('OceanDataComponent', () => {
+  let component: OceanDataComponent;
+  let fixture: ComponentFixture<OceanDataComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OceanDataTableComponent]
+      imports: [OceanDataComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OceanDataTableComponent);
+    fixture = TestBed.createComponent(OceanDataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

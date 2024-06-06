@@ -1,8 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 
-import { OceanDataService } from './oceanData.service';
+import { OceanDataService } from './ocean-data.service';
 
-describe('OceanService', () => {
+describe('OceanDataService', () => {
   let service: OceanDataService;
 
   beforeEach(() => {
