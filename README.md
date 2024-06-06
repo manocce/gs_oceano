@@ -1,9 +1,10 @@
 # GsOceano2024
 
-Marianne Nocce Pinheiro RM93255
-Luana Ramos dos Santos RM94670
+# Marianne Nocce Pinheiro RM93255
 
-As instruções estão na branch - MAIN -
+# Luana Ramos dos Santos RM94670
+
+# As instruções estão na branch - MAIN -
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
